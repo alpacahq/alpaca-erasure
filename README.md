@@ -4,6 +4,11 @@ This script is an example code that calcualtes stock scores every day using
 latest price data. With the output of this script, you can build daily
 rebalancing long-short algorithm.
 
+The score is calculated using exponential weighted moving average with span=10,
+and take the difference from last day closing price. The value range is between 0 and 1
+with 0 being most overvalued and 1 being most undervalued. For more information,
+please take a look at the reference below.
+
 # How to
 
 Install `alpaca-trade-api`
